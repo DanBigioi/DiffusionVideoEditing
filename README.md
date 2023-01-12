@@ -7,8 +7,12 @@ And if you want to read the paper, this is the link to the arxiv submission: htt
 
 Note that while the work presented in this paper is relatively early stage stuff, i'll be using this repo as a "base" of sorts where I'll be periodically updating the model and implementation with newer approaches im currently working on. 
 
-TODO: -> Finish uploading code
-      -> Write some tutorials for how to use said code (I apologise its genuinely a mess, I need to streamline it a bit when I get the time)
-      -> Upload datasets. I'll see if I can somehow upload the whole processed dataset here, but most likely ill upload the preprocessing scripts I made with a guide on          how to extract the stuff you need. For reference, I am using the GRID dataset for a lot of these experiments, but in theory the model should work with any                audiovisual dataset like TCD Timit, Lombard Grid, etc. 
-      
+# TO DO: 
+
+Finish uploading code
+
+Write some tutorials for how to use said code (I apologise its genuinely a mess, I need to streamline it a bit when I get the time)
+
+Upload datasets. I'll see if I can somehow upload the whole processed dataset here, but most likely ill upload the preprocessing scripts I made with a guide on          how to extract the stuff you need. For reference, I am using the GRID dataset for a lot of these experiments, but in theory the model should work with any                audiovisual dataset like TCD Timit, Lombard Grid, etc. 
+
 
