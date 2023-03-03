@@ -9,6 +9,16 @@ And if you want to read the paper, this is the link to the arxiv submission: htt
 
 Note that while the work presented in this paper is relatively early stage stuff, i'll be using this repo as a "base" of sorts where I'll be periodically updating the model and implementation with newer approaches im currently working on. 
 
+# UPDATE: 
+
+Hey all, sorry for the radio silence on this! Got some reviews on the original paper and have been busy addressing them and improving the original implementation. Happy to say that we are getting very nice results on single speaker now and are currently in the middle of evaluating for multi-speaker. Check out the video attached below :) Once I finish writing the udpated paper with all the fancy new improvements, ill add in the latest code too. If you're curious for how it works though, feel free to shoot me an email, always am happy to discuss.  
+
+https://user-images.githubusercontent.com/44242832/222735254-f1880950-0d92-49e3-b447-ee3c8d3008e7.mp4
+
+https://user-images.githubusercontent.com/44242832/222736036-9fa83652-9d7b-4693-a1fe-62719e3f78fd.mp4
+
+
+
 # TO DO: 
 
 Write some tutorials for how to use the code (I apologise its genuinely a mess, I need to streamline it a bit when I get the time). It's on my todo list to write out a detailed guide for both training and running inference. Also need to upload the trained model weights. 
