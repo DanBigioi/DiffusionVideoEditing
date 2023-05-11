@@ -1,6 +1,6 @@
 {
     "name": "TalkingHeadDataset", // experiments name
-    "gpu_ids": [1], // gpu ids list, default is single 0
+    "gpu_ids": [0], // gpu ids list, default is single 0
     "seed" : -1, // random seed, seed <0 represents randomization not used
     "finetune_norm": false, // find the parameters to optimize
 
@@ -11,7 +11,7 @@
         "results": "results",
         "checkpoint": "checkpoint",
         // "resume_state": "experiments/train_TalkingHeadDataset_221003_141203/checkpoint/895"
-        "resume_state": "experiments/train_TalkingHeadDataset_230420_114319/checkpoint/735" 
+        "resume_state": "weights/multi-speaker_checkpoint/735" 
     },
 
     "datasets": { // train or test
@@ -63,7 +63,7 @@
             "which_dataset": {  // import designated dataset using arguments
                 "name": ["data.dataset", "VideoEditing_Inference"], // import Dataset() class / function(not recommend) from data.dataset.py (default is [data.dataset.py])
                 "args":{ // arguments to initialize dataset
-                    "img_dataset_root": "datasets/VideoEditingV2/CREMAD/Cropped_Frames_Test/15",
+                    "img_dataset_root": "datasets/CREMAD/Cropped_Frames_Test/15",
 					"audio_path": "datasets/VideoEditingV2/CREMAD/Audio_16Khz_Numpy",
 					"generated_data_root": "datasets/Generated_Frames",
                     "mask_mode": "face_mask_square"
@@ -140,7 +140,7 @@
 						
 						"infer": {
                             "schedule": "cosine",
-                            "n_timestep": 1000,
+                            "n_timestep": 100,
                             "linear_start": 1e-6,
                             "linear_end": 0.01
                         }
