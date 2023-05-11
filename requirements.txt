@@ -9,3 +9,4 @@ clean-fid==0.1.23
 opencv-python==4.6.0.66
 Pillow==9.0.1
 mediapipe==0.8.10
+gdown
