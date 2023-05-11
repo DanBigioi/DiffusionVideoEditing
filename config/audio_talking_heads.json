@@ -10,8 +10,8 @@
         "tb_logger": "tb_logger", // path of tensorboard logger
         "results": "results",
         "checkpoint": "checkpoint",
-		"resume_state": "experiments/train_TalkingHeadDataset_230417_102002/checkpoint/415"
-        //"resume_state": "experiments/train_TalkingHeadDataset_230331_144344/checkpoint/790"
+		"resume_state": "weights/multi-speaker_checkpoint/735"
+        //"resume_state": null
         		
     },
 
@@ -20,8 +20,8 @@
             "which_dataset": {  // import designated dataset using arguments
                 "name":["data.dataset", "VideoEditing"], // import Dataset() class / function(not recommend) from data.dataset.py (default is [data.dataset.py])
                 "args":{ // arguments to initialize dataset
-                    "img_dataset_root": "datasets/VideoEditingV2/CREMAD/Cropped_Frames",
-					"audio_path": "datasets/VideoEditingV2/CREMAD/Audio_16Khz_Numpy",
+                    "img_dataset_root": "datasets/CREMAD/Cropped_Frames_Train",
+					"audio_path": "datasets/CREMAD/Audio_16Khz_Numpy",
                     "mask_mode": "face_mask_square"
                 }
             },
@@ -47,8 +47,8 @@
             "which_dataset": {
                 "name": "VideoEditing", // import Dataset() class / function(not recommend) from default file
                 "args":{
-                    "img_data_root": "datasets/S1/Train Image Frames",
-					"audio_data_root": "datasets/S1/Train Audio Frames",
+                    "img_data_root": "datasets/CREMAD/Cropped_Frames_Train",
+					"audio_data_root": "datasets/CREMAD/Audio_16Khz_Numpy",
                     "mask_mode": "face_mask_square"
                 }
             },
@@ -64,8 +64,8 @@
             "which_dataset": {  // import designated dataset using arguments
                 "name": ["data.dataset", "VideoEditing_Inference"], // import Dataset() class / function(not recommend) from data.dataset.py (default is [data.dataset.py])
                 "args":{ // arguments to initialize dataset
-                    "img_dataset_root": "datasets/VideoEditingV2/S1/S1_Video_Frames",
-					"audio_path": "datasets/VideoEditingV2/S1/S1_Audios",
+                    "img_dataset_root": "datasets/CREMAD/Cropped_Frames_Test/15",
+					"audio_path": "datasets/CREMAD/Audio_16Khz_Numpy",
                     "mask_mode": "face_mask_square"
                     
                 }
@@ -140,7 +140,7 @@
 						
 						"infer": {
                             "schedule": "cosine",
-                            "n_timestep": 1000,
+                            "n_timestep": 100,
                             // "n_timestep": 10, // debug
                             "linear_start": 0.0015,
                             "linear_end": 0.0195
