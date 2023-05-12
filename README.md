@@ -123,8 +123,7 @@ python run.py -c config/audio_talking_heads_inference.json -p infer
 
 Note that inference can only be run on a single GPU with a batch size of 1, and 0 num_workers. This is because the method is entirely autoregressive and relies on the previously generated frame to generate the following one. Make sure you modify the inference section of the json to point towards the frames you want to modify, and audio. 
 
-**We are currently working on preparing an easier to use inference script, so stay tuned for updates there! 
-**
+**We are currently working on preparing an easier to use inference script, so stay tuned for updates there!**
 
 Once inference finishes running, the folder datasets/Generated_Frames will contain all the newly generated frames. To turn them into a video, use the two methods we provide in utils/make_video.py , namely the make_videos() and combine_audio_video() methods. 
 
